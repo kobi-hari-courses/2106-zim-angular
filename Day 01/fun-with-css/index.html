@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Fun with CSS</title>
+        <link href="styles.css" rel="stylesheet">
+    </head>
+    <body>
+        <h1>Welcome to CSS</h1>
+        <h2>This is what we will learn today</h2>
+        <ul>
+            <li>Embedding CSS in HTML files</li>
+            <ul>
+                <li>Inline with style attribute</li>
+                <li>Embedded in the header</li>
+                <li>External file</li>
+            </ul>
+            <li>CSS Selectors</li>
+            <li class="important">Colors properties</li>
+            <li type="number">Combining selectors</li>
+            <li>Box properties</li>
+        </ul>
+        <h1>About selectors</h1>
+        <h2 class="important">These are the selectors that we will see today</h2>
+        <ul>
+            <li id="moshe">Type Selectors: 
+                <pre>
+                    h1: selects all elements of type "h1"
+                </pre>
+            </li>
+            <li class="important">Class Selectors
+                <pre>
+                    .mashu: selects all elements with class=".... mashu ...""
+                </pre>
+            </li>
+            <li>Id Selectors
+                <pre>
+                    #mashu: selects all elements with id="mashu"
+                </pre>
+            </li>
+            <li class="important funny">Attribute Selectors
+                <pre>
+                    [mashu=val]: selects all elements with attribute mashu with value val
+                </pre>
+                <pre>
+                    [mashu]: selects all elements with attribute mashu
+                </pre>
+            </li>
+            <li>Wild card selector
+                <pre>
+                    *: selects everything
+                </pre>
+            </li>
+        </ul>
+
+        <h1>CSS Combinators</h1>
+        <ul>
+            <li>and combinator</li>
+        </ul>
+
+        <input type="text">
+        <input type="search">
+        <input type="number">
+
+        <div class="special">
+            Special
+            <ul>
+                <li>A</li>
+                <li>B</li>
+                <li>C</li>
+            </ul>
+        </div>
+
+        <div>
+            Not Special
+            <ul>
+                <li>A</li>
+                <li>B</li>
+                <li>C</li>
+            </ul>
+        </div>
+
+        <div>
+            <li>bla</li>
+            <li>bla</li>
+        </div>
+
+    </body>
+</html>
