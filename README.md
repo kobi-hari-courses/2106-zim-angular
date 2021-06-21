@@ -4,3 +4,5 @@
 
 ## Exercises
 * [Ex1 - HTML and CSS](https://github.com/kobi2294/Course-2106-Zim/wiki/Exercise-1---HTML-and-CSS)
+* [Ex2 - Typescript](https://github.com/kobi2294/Course-2106-Zim/wiki/Exercise-2--Fun-with-Typescript)
+* 
