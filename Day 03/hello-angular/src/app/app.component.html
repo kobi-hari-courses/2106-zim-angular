@@ -1,0 +1,9 @@
+<input #myInput type="search" (input)="setKeyword(myInput.value)" [disabled]="isBusy">
+<button (click)="search()" [disabled]="isBusy">Go</button>
+<img *ngIf="isBusy" src="https://cdn.shopify.com/s/files/1/0163/4078/t/96/assets/progressring.gif?300130">
+
+<hr>
+
+<ul>
+    <li *ngFor="let res of results">{{res}}</li>
+</ul>
