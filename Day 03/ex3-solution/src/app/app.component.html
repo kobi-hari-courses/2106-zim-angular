@@ -1,0 +1,10 @@
+a: <input #inputA type="number">
+b: <input #inputB type="number">
+<hr>
+<button (click)="calc(inputA.valueAsNumber, inputB.valueAsNumber)">Calc!</button>
+<hr>
+<ul>
+  <li>{{a}} + {{b}} = {{sum}}</li>  
+  <li>{{a}} - {{b}} = {{difference}}</li>  
+  <li>{{a}} * {{b}} = {{product}}</li>  
+</ul>
