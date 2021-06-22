@@ -1,36 +1,29 @@
 <section class="title-area">
-Notepad
+  <app-title caption="Hello World" [color]="selectedColor"></app-title>
+  <app-title></app-title>
 </section>
 <section class="colors-area">
-  <ul>
-    <li *ngFor="let item of colors"
-        (click)="selectColor(item)"
-        [class.choosen]="item === selectedColor"
-        >{{item}}</li>
-  </ul>
+  <app-string-selector 
+    [options]="colors" 
+    [selectedOption]="selectedColor"
+    (selection)="selectColor($event)"
+    ></app-string-selector>
 </section>
 <section class="sizes-area">
-  <ul>
-    <li *ngFor="let item of sizes"
-      (click)="selectSize(item)"
-      [class.choosen]="item === selectedSize"
-
-    >{{item}}</li>
-  </ul>
+  <app-string-selector 
+    [options]="sizes" 
+    [selectedOption]="selectedSize"
+    (selection)="selectSize($event)"
+    ></app-string-selector>
 </section>
 <section class="fonts-area">
-  <ul>
-    <li *ngFor="let item of fonts"
-    (click)="selectFont(item)"
-    [class.choosen]="item === selectedFont"
-
-    >{{item}}</li>
-  </ul>
+  <app-string-selector 
+    [options]="fonts" 
+    [selectedOption]="selectedFont"
+    (selection)="selectFont($event)"
+    ></app-string-selector>
 </section>
 <section class="text-area">
-  <textarea
-    [style.color]="selectedColor"
-    [style.font-size]="selectedSize"
-    [style.font-family]="selectedFont"
-  ></textarea>
+  <textarea [style.color]="selectedColor" [style.font-size]="selectedSize"
+    [style.font-family]="selectedFont"></textarea>
 </section>
