@@ -1,0 +1,36 @@
+<section class="title-area">
+Notepad
+</section>
+<section class="colors-area">
+  <ul>
+    <li *ngFor="let item of colors"
+        (click)="selectColor(item)"
+        [class.choosen]="item === selectedColor"
+        >{{item}}</li>
+  </ul>
+</section>
+<section class="sizes-area">
+  <ul>
+    <li *ngFor="let item of sizes"
+      (click)="selectSize(item)"
+      [class.choosen]="item === selectedSize"
+
+    >{{item}}</li>
+  </ul>
+</section>
+<section class="fonts-area">
+  <ul>
+    <li *ngFor="let item of fonts"
+    (click)="selectFont(item)"
+    [class.choosen]="item === selectedFont"
+
+    >{{item}}</li>
+  </ul>
+</section>
+<section class="text-area">
+  <textarea
+    [style.color]="selectedColor"
+    [style.font-size]="selectedSize"
+    [style.font-family]="selectedFont"
+  ></textarea>
+</section>

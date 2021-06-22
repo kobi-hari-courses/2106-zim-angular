@@ -17,6 +17,7 @@ export class AppComponent {
 
   // METHODS
   selectColor(value: string) {
+    console.log('selecting color: ' + value);
     this.selectedColor = value;
   }
 
