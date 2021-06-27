@@ -3,6 +3,7 @@
 * [Day 01 - HTML and CSS](https://github.com/kobi2294/Course-2106-Zim/wiki/Day-01---Web-techs:-HTML,-CSS)
 * [Day 02 - JS, Node JS and Typescript](https://github.com/kobi2294/Course-2106-Zim/wiki/Day-02---JS-and-TS)
 * [Day 03 - Angular Components](https://github.com/kobi2294/Course-2106-Zim/wiki/Day-03---Angular-Components)
+* [Day 04 - DI, Promises, and RxJS](https://github.com/kobi2294/Course-2106-Zim/wiki/Day-04---DI-Promieses-and-RxJS)
 
 ## Exercises
 * [Ex1 - HTML and CSS](https://github.com/kobi2294/Course-2106-Zim/wiki/Exercise-1---HTML-and-CSS)
