@@ -1,0 +1,3 @@
+a: <input type="number" #a (input)="setA(a.valueAsNumber)" [class.invalid]="!(isAValid$ | async)">
+b: <input type="number" #b (input)="setB(b.valueAsNumber)" [class.invalid]="!(isBValid$ | async)">
+
