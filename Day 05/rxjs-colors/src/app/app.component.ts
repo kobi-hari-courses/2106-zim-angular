@@ -1,26 +1,36 @@
-import { Component } from '@angular/core';
-import { from, interval, Observable, of } from 'rxjs';
-import { filter, map, tap } from 'rxjs/operators';
+import { ColorsService } from './services/colors.service';
+import { Component, OnInit } from '@angular/core';
+import { from, interval, merge, Observable, of, Subject } from 'rxjs';
+import { filter, map, mapTo, mergeAll, switchAll, tap } from 'rxjs/operators';
+import { Color } from './models/color.model';
 
 @Component({
   selector: 'app-root',
   templateUrl: './app.component.html',
   styleUrls: ['./app.component.css']
 })
-export class AppComponent {
-  mashu$!: Observable<any>;
+export class AppComponent implements OnInit {
+  search$ = new Subject<string>();
+  results$!: Observable<Color[]>;
+  isBusy$!: Observable<boolean>;
 
-  constructor() {
-    this.mashu$ = interval(1000).pipe(
-      map(i => i ** 2), 
-      filter(i => i % 3 === 0),
-      tap(val => console.log(val))
-    );
+  constructor(private colorsService: ColorsService) {
   }
 
+  onInput(value: string) {
+    this.search$.next(value);
+  }
 
-  // factories: 
-  // 1. interval
-  // 2. of
-  // 3. from
+  ngOnInit(): void {
+    this.results$ = this.search$.pipe(
+      map(keyword => this.colorsService.search(keyword)),
+      switchAll()
+    );
+
+    let true$ = this.search$.pipe(mapTo(true));
+    let false$ = this.results$.pipe(mapTo(false));
+
+    this.isBusy$ = merge(true$, false$);
+  }
+
 }

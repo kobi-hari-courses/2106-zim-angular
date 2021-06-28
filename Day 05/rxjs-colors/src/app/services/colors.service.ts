@@ -14,14 +14,20 @@ export class ColorsService {
   }
 
   async search(keyword: string): Promise<Color[]> {
+    console.log('starting search for ' + keyword);
     await this.delay(3000);
 
-    if ((!keyword) || (typeof(keyword) !== 'string')) return [];
+    if ((!keyword) || (typeof (keyword) !== 'string')) {
+      console.log('completed search for ' + keyword);
+      return [];
+    }
 
     keyword = keyword.toLowerCase();
 
     let res = ALL_COLORS
-          .filter(c => c.name.toLowerCase().includes(keyword));
+      .filter(c => c.name.toLowerCase().includes(keyword));
+
+    console.log('completed search for ' + keyword);
 
     return res;
   }

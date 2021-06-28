@@ -1,1 +1,11 @@
-{{mashu$ | async}}
+<div class="search-area">
+  <input type="search" #searchBox (input)="onInput(searchBox.value)">
+  <img *ngIf="isBusy$ | async" src="https://i.pinimg.com/originals/f9/a7/58/f9a758523a11e5e2dd590345ddf5f2ed.gif">
+</div>
+
+<div class="results-area">
+  <div class="result-item" *ngFor="let item of (results$ | async)" [style.background]="item.hex">
+    <span> {{item.name}}
+    </span>
+  </div>
+</div>

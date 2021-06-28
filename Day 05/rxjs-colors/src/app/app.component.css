@@ -1,0 +1,31 @@
+img {
+    height: 40px;
+}
+
+input {
+    font-size: 36px;
+}
+
+.search-area {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.results-area {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.result-item {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+}
+
+.result-item>span {
+    background-color: rgba(255, 255, 255, 0.5);
+    padding: 4px;
+    border: 1px solid black;
+}
