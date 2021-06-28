@@ -1,0 +1,11 @@
+<div *ngIf="(isValid$ | async) && !(isBusy$ | async)">
+    <div>
+        {{ a$ | async }} + {{ b$ | async }} = {{ sum$ | async }}
+    </div>
+    <div>
+        {{ a$ | async }} - {{ b$ | async }} = {{ diff$ | async }}
+    </div>
+    <div>
+        {{ a$ | async }} * {{ b$ | async }} = {{ product$ | async }}
+    </div>
+</div>
