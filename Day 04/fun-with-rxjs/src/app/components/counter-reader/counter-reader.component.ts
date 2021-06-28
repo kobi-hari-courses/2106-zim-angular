@@ -1,6 +1,6 @@
-import { Observable } from 'rxjs';
+import { Observable, Subscription } from 'rxjs';
 import { CounterService } from './../../services/counter.service';
-import { Component, OnInit } from '@angular/core';
+import { Component, OnDestroy, OnInit } from '@angular/core';
 
 @Component({
   selector: 'app-counter-reader',
@@ -18,13 +18,21 @@ export class CounterReaderComponent implements OnInit {
 
   // value: number = 0;
 
+  // sub!: Subscription;
+
   // ngOnInit(): void {
-  //   this
+  //   this.sub = this
   //     .counterService
   //     .getCounter()
   //     .subscribe(val => {
+  //       console.log('counter changed to value: ' + val);
   //       this.value = val;
   //     })
   // }
+
+  // ngOnDestroy(): void {
+  //   this.sub.unsubscribe();
+  // }
+
 
 }

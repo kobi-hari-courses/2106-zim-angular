@@ -1,4 +1,4 @@
-import { BehaviorSubject, Observable } from 'rxjs';
+import { BehaviorSubject, Observable, Subject } from 'rxjs';
 import { Injectable } from '@angular/core';
 
 @Injectable({
@@ -7,6 +7,7 @@ import { Injectable } from '@angular/core';
 export class CounterService {
   private value: number = 0;
   private value$ = new BehaviorSubject<number>(this.value);
+  // private value$ = new Subject<number>();
 
   constructor() { }
 
