@@ -1,10 +1,10 @@
 {
-    "types": [
-      "general", 
-      "knock-knock", 
-      "programming"
-    ],
-    "jokes": [
+  "types": [
+    "general",
+    "knock-knock",
+    "programming"
+  ],
+  "jokes": [
     {
       "id": 1,
       "type": "general",
@@ -44,7 +44,7 @@
     {
       "id": 7,
       "type": "general",
-      "setup": "What do you call a singing Laptop",
+      "setup": "What do you call a singing Laptop computer",
       "punchline": "A Dell"
     },
     {
@@ -2274,5 +2274,4 @@
       "punchline": "I had to draw my own conclusions."
     }
   ]
-  
 }
