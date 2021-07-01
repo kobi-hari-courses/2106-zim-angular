@@ -1,4 +1,9 @@
 {
+    "types": [
+      "general", 
+      "knock-knock", 
+      "programming"
+    ],
     "jokes": [
     {
       "id": 1,
