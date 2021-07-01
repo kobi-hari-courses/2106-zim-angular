@@ -11,6 +11,7 @@
 * [Ex2 - Typescript](https://github.com/kobi2294/Course-2106-Zim/wiki/Exercise-2--Fun-with-Typescript)
 * [Ex3 - Angular Single Component](https://github.com/kobi2294/Course-2106-Zim/wiki/Exercise-3---Angular-Single-Component)
 * [Ex4 - Angular DI Promises and RxJS](https://github.com/kobi2294/Course-2106-Zim/wiki/Exercise-4-Angular-Services-and-Rxjs)
+* [Ex5 - Routing, Http and Forms](https://github.com/kobi2294/Course-2106-Zim/wiki/Exercise-5---Routing-Http-and-Forms)
 
 ## Practice Projects
 * [Project 1: Angular Pop Quiz](https://github.com/kobi2294/Course-2106-Zim/wiki/Project-1---Pop-Quiz)
