@@ -5,6 +5,7 @@
 * [Day 03 - Angular Components](https://github.com/kobi2294/Course-2106-Zim/wiki/Day-03---Angular-Components)
 * [Day 04 - DI, Promises, and RxJS](https://github.com/kobi2294/Course-2106-Zim/wiki/Day-04---DI-Promieses-and-RxJS)
 * [Day 05 - RxJS Operators](https://github.com/kobi2294/Course-2106-Zim/wiki/Day-05---Rxjs-Operators)
+* [Day 06 - Http and Routing](https://github.com/kobi2294/Course-2106-Zim/wiki/Day-06-Http-and-Routing)
 
 ## Exercises
 * [Ex1 - HTML and CSS](https://github.com/kobi2294/Course-2106-Zim/wiki/Exercise-1---HTML-and-CSS)
@@ -20,6 +21,11 @@
 * Project 2 - Pop quiz - with services
     * [Presentation](https://www.dropbox.com/s/n9pawcvycxv03sx/Description.pptx?dl=0)
     * [Helper Video](https://www.dropbox.com/s/eba2hohp9z7fzkh/Solution.mp4?dl=0)
+* Final Project - Todo app
+   * [Description](https://github.com/kobi2294/AngularSamples/blob/master/src/todo-app/README.md)
+   * [Solution Code](https://github.com/kobi2294/AngularSamples/tree/master/src/todo-app)
+   * [Solution Video](https://youtu.be/6NWdsDs5raI)
+
 
 ## Extra Links
 - [Grid Garden](https://cssgridgarden.com/)
