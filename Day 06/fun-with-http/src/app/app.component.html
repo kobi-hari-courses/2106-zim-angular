@@ -1,0 +1,11 @@
+<button (click)="getAllMovies()">Get All Movies</button>
+<input type="number" #inputId>
+<button (click)="getMovie(inputId.valueAsNumber)">Get Specific Movie</button>
+
+<pre>
+  Movies: {{movies$ | async | json}}
+</pre>
+
+<pre>
+  Error: {{err.statusText | json}}
+</pre>
