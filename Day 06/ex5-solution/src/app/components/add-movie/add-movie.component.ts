@@ -2,6 +2,7 @@ import { DataService } from './../../service/data.service';
 import { Component, OnInit } from '@angular/core';
 import { FormControl, FormGroup, Validators } from '@angular/forms';
 import { Movie } from 'src/app/models/movie.model';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-add-movie',
@@ -15,7 +16,10 @@ export class AddMovieComponent implements OnInit {
     poster: new FormControl('', Validators.required)
   })
 
-  constructor(private data: DataService) { }
+  constructor(
+    private data: DataService,
+    private router: Router
+    ) { }
 
   ngOnInit(): void {
   }
@@ -25,6 +29,7 @@ export class AddMovieComponent implements OnInit {
       ...this.form.value
     }
     await this.data.addMovie(movie);
+    this.router.navigate(['movies']);
   }
 
 }

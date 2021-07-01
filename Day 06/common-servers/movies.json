@@ -89,6 +89,18 @@
       "description": "A toon-hating detective is a cartoon rabbit's only hope to prove his innocence when he is accused of murder.",
       "poster": "https://cloud.vistaapps.elcapitantheatre.com/CDN/media/entity/get/FilmPosterGraphic/h-HO00000104",
       "id": 17
+    },
+    {
+      "caption": "Miki Mouse",
+      "description": "A movie with miki, donald, mini, and more",
+      "poster": "https://i.pinimg.com/originals/17/5c/13/175c1355af4adc478512f2ed7d3d677f.png",
+      "id": 18
+    },
+    {
+      "caption": "Bugs Bunny",
+      "description": "cartoon for children",
+      "poster": "https://upload.wikimedia.org/wikipedia/en/thumb/1/17/Bugs_Bunny.svg/1200px-Bugs_Bunny.svg.png",
+      "id": 19
     }
   ]
 }
