@@ -1,0 +1,9 @@
+<ng-container *ngIf="(joke$ | async) as joke">
+    <h1>{{joke.setup}}</h1>
+    <h2>{{joke.punchline}}</h2>
+
+    <button (click)="next()">Next</button>
+    <button (click)="prev()">Prev</button>
+    <button (click)="edit()">Edit</button>
+</ng-container>
+

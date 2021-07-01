@@ -1,0 +1,2 @@
+<button *ngIf="!(isLoggedIn$ | async)" (click)="login()">Login</button>
+<button *ngIf="(isLoggedIn$ | async)" (click)="logout()">Logout</button>

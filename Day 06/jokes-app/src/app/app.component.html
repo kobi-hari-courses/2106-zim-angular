@@ -1,2 +1,7 @@
 <nav>
+    {{isLoggedIn$ | async}}
+    <a *ngFor="let type of types" routerLinkActive="here" [routerLink]="['jokes', type]">{{type}}</a>
+    <a routerLink="account" routerLinkActive="here">Account</a>
 </nav>
+
+<router-outlet></router-outlet>

@@ -14,8 +14,9 @@ export class DataService {
     return this.http.get<string[]>(url).toPromise();
   }
 
-  getJokeByTypeAndIndex(type: string, index: number): Promise<Joke> {
+  getJokeByTypeAndIndex(type: string, index: number): Promise<Joke> {    
     let url = `${environment.baseUrl}/jokes?type=${type}&_limit=1&_start=${index}`;
+    console.log(url);
     return this.http.get<Joke[]>(url)
       .toPromise()
       .then(jokes => jokes[0]);

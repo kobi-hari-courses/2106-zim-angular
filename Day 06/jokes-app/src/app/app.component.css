@@ -1,0 +1,15 @@
+nav {
+    background: rgb(225, 255, 225);
+    display: flex;
+    flex-direction: row;
+}
+
+nav a {
+    padding: 8px;
+    text-decoration: none;
+    color: black;
+}
+
+nav a.here {
+    background: lightgreen;
+}
