@@ -1,0 +1,18 @@
+nav {
+    display: flex;
+    flex-direction: row;
+    background: rgb(228, 248, 255);
+}
+
+nav a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 6px;
+    text-decoration: none;
+    color: black;
+}
+
+nav a.kan{
+    background: rgb(133, 178, 194);
+}
