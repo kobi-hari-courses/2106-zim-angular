@@ -1,1 +1,16 @@
-<p>add-movie works!</p>
+<div class="form" [formGroup]="form">
+    <div class="field">
+        <label>Caption</label>
+        <input formControlName="caption" type="text">
+    </div>
+    <div class="field">
+        <label>Description</label>
+        <textarea formControlName="description"></textarea>
+    </div>
+    <div class="field">
+        <label>Poster URL</label>
+        <input formControlName="poster" type="text">
+    </div>
+</div>
+
+<button [disabled]="form.invalid" (click)="save()">Save</button>

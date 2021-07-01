@@ -6,6 +6,7 @@ import { MoviesListComponent } from './components/movies-list/movies-list.compon
 import { AddMovieComponent } from './components/add-movie/add-movie.component';
 import { RouterModule, Routes } from '@angular/router';
 import { HttpClientModule } from '@angular/common/http';
+import { ReactiveFormsModule } from '@angular/forms';
 
 const routes: Routes = [
   { path: '', redirectTo: 'movies', pathMatch: 'full'},
@@ -22,6 +23,7 @@ const routes: Routes = [
   imports: [
     BrowserModule, 
     HttpClientModule,
+    ReactiveFormsModule,
     RouterModule.forRoot(routes)
   ],
   providers: [],
